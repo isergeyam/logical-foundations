@@ -2174,8 +2174,8 @@ Proof.
   subst. apply IHceval1 in H9. destruct H9 as [_ contra]. discriminate. 
   intros. inversion H1. subst. rewrite H7 in H. discriminate. 
   subst. apply IHceval in H5. destruct H5 as [_ contra]. discriminate. 
-  subst. apply IHceval in H8. destruct H8 as [H8 _]. split. assumption. reflexivity.
-Qed.
+  subst. apply IHceval in H8. destruct H8 as [H8 _]. split. assumption. reflexivity. 
+Admitted.
 
 (** [] *)
 End BreakImp.
